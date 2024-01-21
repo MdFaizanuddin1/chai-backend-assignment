@@ -47,7 +47,7 @@ const getUserPlaylists = asyncHandler(async (req, res) => {
   });
 
   if (!playlists) throw new ApiError(400, "you dont have any playlists");
-  console.log("playlists is ", playlists);
+  //console.log("playlists is ", playlists);
   return res
     .status(200)
     .json(new ApiResponse(200, playlists, "playlists fetched successfully"));
